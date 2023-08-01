@@ -1,6 +1,8 @@
 <script>
-	// export let data;
-	// const { users } = data;
+	export let data;
+	const { users } = data;
+
+	console.log('users :>> ', users);
 
 	let name;
 	let email;
@@ -24,11 +26,11 @@
 <h1>Welcome to SvelteKit</h1>
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
 
-<!-- {#each users as user}
+{#each users as user}
 	<li>id : {user.id}</li>
 	<li>email : {user.email}</li>
 	<li>name : {user.name}</li>
-{/each} -->
+{/each}
 
 <div>
 	<input type="text" bind:value={name} />
